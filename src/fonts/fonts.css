@@ -1,0 +1,19 @@
+@font-face {
+  src:
+    url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+    url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+  font-family: 'SFProDisplay';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src:
+    url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+    url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
+  font-family: 'SFProDisplay';
+  font-style: normal;
+  font-weight: 600;
+}

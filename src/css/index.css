@@ -1,0 +1,6 @@
+@import url(../fonts/fonts.css);
+
+body {
+  font-family: 'SFProDisplay', 'Arial', sans-serif;
+  border: 1px solid red;
+}
