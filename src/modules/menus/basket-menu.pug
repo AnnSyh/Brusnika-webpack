@@ -1,0 +1,16 @@
+#catalog-basket.basket-menu.basket-menu_visible1
+
+    .basket-inner.page-inner--w2
+      .basket-open.basket-menu__close
+      .basket-menu-sections
+        .basket-mobile-menu__header
+          a.basket__title-link(href='basket.html') Товары в корзине(1)
+          a.basket__title-link-clean-basket(href='#') Очистить корзину
+        .basket-mobile-menu__body.simplebar
+          include ../basket/items-in-cart
+          include ../basket/watching-with
+      .basket-mobile-menu__footer
+        .basket-mobile-menu__footer-links
+          .basket__title-link 4 Товара на сумму
+          .basket__title-link 6 900 РУБ.
+        button.btn.btn--black.btn--medium.w100.max-w100(type='submit') Оформить заказ

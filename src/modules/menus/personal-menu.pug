@@ -1,0 +1,24 @@
+- 
+    const activeLink = 'История заказов'
+
+    //- Пункты меню
+    const personalMenuData1 = [
+        {name: 'Текущие заказы (1)',    url: 'orders.html'},
+        {name: 'История заказов',       url: 'history.html'},
+        {name: 'Корзина (2)',           url: 'basket.html'}, 
+        {name: 'Избранное (2)',         url: 'favorites.html'},
+        {name: 'Личные данные',         url: 'personal.html'},
+        {name: 'Выйти',                 url: '#'},
+        ]
+
+mixin menu(classname, data, activeLink)
+  div(class= ""+classname)
+    each item in data
+      div(class='personal-menu-item')
+        if (activeLink === item.name)
+          a(href=`${item.url}` class=`link link--black active`)= item.name  
+        else 
+          a(href=`${item.url}` class=`link link--black`)= item.name   
+
+
++menu('personal-menu', personalMenuData1, activeLink)

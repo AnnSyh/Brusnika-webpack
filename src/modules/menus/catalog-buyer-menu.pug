@@ -1,0 +1,19 @@
+
+
+#catalog-buyer-menu.catalog-buyer-menu
+  .page-inner
+    .menu-sections
+      ul.buyer-menu__list
+        each item in firstBuyersItems
+          li
+            a.buyer-menu__link.active(href=`${item.href}`)= item.name
+
+      ul.buyer-menu__list
+        each item in secondBuyersItems
+          li
+            a.buyer-menu__link.active(href=`${item.href}`)= item.name
+
+      ul.buyer-menu__list
+        each item in thirdBuyersItems
+          li
+            a.buyer-menu__link.active(href=`${item.href}`)= item.name      

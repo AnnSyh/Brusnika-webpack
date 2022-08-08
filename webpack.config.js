@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+var HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 
 module.exports = {
   entry: {
@@ -50,13 +51,30 @@ module.exports = {
           // Compiles Sass to CSS
           "sass-loader",
         ],
+      },
+      {
+        test: /\.pug$/,
+        use: [
+          {
+            loader: 'simple-pug-loader'
+          }
+        ]
       }      
     ]
   },
   plugins: [
+    // new HtmlWebpackPlugin({
+    //   template: './src/index.html'
+    // }),
+
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.pug',
+      minify: false
     }),
+    new HtmlWebpackPugPlugin({
+      adjustIndent: true
+    }),
+
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
 

@@ -1,0 +1,32 @@
+
+.page-inner.page-inner--w1.desktop
+  .header-menu
+    .header-menu__left
+      ul.header-menu__list
+        li.header-menu__item
+          a.header-menu__item-catalog.catalog-open(href='#')
+            span Каталог
+        li.header-menu__item.header-menu__item-dropdown.catalog-dropdown
+          a(href='#') Покупателям
+        li.header-menu__item
+          a(href='#') Магазины
+        li.header-menu__item
+          a(href='#') Блог
+    .header-menu__center
+      a.header-logo(href='#')
+        img(src=require('./svg/logo_header.svg') alt='')
+    .header-menu__right
+      ul.header-menu__list
+        li.header-menu__item.header-menu__item_search.catalog-search-open
+          a(href='#')
+            span Поиск
+        li.header-menu__item
+          //- a.header-toolbar-item(href='#auth-form' data-popup='{"type":"inline"}')
+          a.header-toolbar-item(href='login.html')
+            | Вход
+        li.header-menu__item
+          a(href='favorites.html') Избранное
+        li.header-menu__item
+          a.header-toolbar-item.basket-open(href='#')
+            img(src=require('./svg/basket.svg') alt='')
+            span

@@ -1,0 +1,31 @@
+doctype html
+
+block variables
+
+//- общие данные 
+//- include ../utils/data   
+
+//- общие миксины
+//- include ../utils/mixins 
+
+
+html.no-js(lang='ru' prefix='og:http://ogp.me/ns#')
+  include ../modules/head
+  body
+    .page
+      include ../modules/page-note
+      include ../modules/header
+
+      block content
+
+      //- include ../modules/footer
+    //- include ../modules/footer-popups
+    //- include ../modules/footer-scripts 
+
+//- блок для вспл окошек на отдельной стр
+//- не работает на dev\basket.pug ???
+//- block footer-popups 
+
+//- блок для скриптов на отдельной стр
+//- block script 
+  

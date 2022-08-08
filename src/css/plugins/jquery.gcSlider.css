@@ -1,0 +1,101 @@
+.gc-slider {
+  position: relative;
+  width: 100%;
+}
+.gc-slider .gc-slider-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #009ecc;
+}
+.gc-slider .gc-slider-line .gc-slider-line-dot {
+  position: absolute;
+  top: -15px;
+  margin-left: -15px;
+  z-index: 20;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0,158,204,0.7);
+  cursor: pointer;
+  transition: 0.3s background-color cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: 0.3s background-color cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.gc-slider .gc-slider-line .gc-slider-line-dot.animation {
+  transition: 0.3s background-color cubic-bezier(0.25, 0.46, 0.45, 0.94), 0.3s left cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: 0.3s background-color cubic-bezier(0.25, 0.46, 0.45, 0.94), 0.3s left cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.gc-slider .gc-slider-line .gc-slider-line-dot:before {
+	content: "";
+	
+	position: absolute;
+	left: 7.5px;
+	top: 7.5px;
+	
+	display: block;
+	width: 15px;
+	height: 15px;
+	
+	background-color: #009ecc;
+	border-radius: 50%;
+}
+.gc-slider .gc-slider-line .gc-slider-line-dot:hover,
+.gc-slider .gc-slider-line .gc-slider-line-dot.draggable {
+	background-color: #009ecc;
+}
+.gc-slider .gc-slider-points {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  user-select: none;
+}
+.gc-slider .gc-slider-points .gc-slider-point-item {
+  position: absolute;
+  top: -10px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: inline-block;
+  padding-top: 2px;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 1;
+  min-width: 20px;
+  text-align: center;
+  padding-top: 25px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.gc-slider .gc-slider-points .gc-slider-point-item sup {
+	font-size: 9px;
+	vertical-align: top;
+}
+.gc-slider .gc-slider-points .gc-slider-point-item:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 7px;
+  margin-left: -1px;
+  display: block;
+  width: 2px;
+  height: 9px;
+  background-color: #009ecc;
+}
+
+@media screen and (max-width: 840px) {
+	.gc-slider {
+		margin: 0 auto;
+		width: 90%;
+		top: 5px;
+		min-height: 20px;
+	}
+}

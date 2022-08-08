@@ -1,0 +1,33 @@
+
+mixin listLinks(classname,titlename,...items)
+  ul(class= ""+classname)
+    li.search-history__title= titlename
+      each item in items
+        li
+          a.search-history__link(href='#')= item   
+
+#catalog-search-menu.catalog-search-menu
+  .page-inner.page-inner--w2
+    .menu-sections
+      .menu-sections__inner.page-inner--w2
+        form(action='search.html')
+          .search-form
+            input.search-form__input(type='text' placeholder='')
+            button.search-form__clear(type='button')
+            button.search-form__submit.btn.btn--black.btn--medium(type='submit') Найти
+          .search-results
+            .search-history
+              +listLinks('search-history__list', 'ИСТOРИЯ ПOИСКА', 'Платье', 'Жабо', 'Юбка')
+              +listLinks('search-history__list', 'Часто ищут', 'Боди', 'Платье', 'Топы', 'Футболки')
+
+            .search-products
+              .row.search-products__catalog-items
+                each item in searchProducts
+                  .col-md-3.col-sm-6
+                    .catalog-item.w1
+                      .catalog-item-photo-holder
+                        img.cover(src=`../dummy/catalog/${item.img}`)
+                      .catalog-item-title= item.title
+                      .catalog-item-price= item.price
+                      a.catalog-item-link(href=`${item.href}`)
+                      button.catalog-item-like(type='button') 

@@ -1,0 +1,126 @@
+- 
+    //- Пункты подменюшек
+    const data1 = [
+        {name: '1Summer City Wibe', url: '#cm1'},
+        {name: 'East way', url: '#cm2'},
+        {name: 'With Nature', url: '#cm3'}, 
+        {name: 'Prod Dress', url: '#cm4'},
+        ]
+
+    const data2 = [
+        {name: 'Плиссирвоанные', url: '#cm21'},
+        {name: 'Прямые', url: '#cm22'},
+        {name: 'Юбка-брюки', url: '#cm23'}, 
+        {name: 'Трапецевидные', url: '#cm24'},
+        ]
+
+    const data3 = [
+        {name: 'Плиссирвоанные', url: '#cm31'},
+        {name: 'Прямые', url: '#cm32'},
+        {name: 'Юбка-брюки', url: '#cm33'}, 
+        {name: 'Трапецевидные', url: '#cm34'},
+        ]
+
+mixin subMenuOpen(classname, data)
+  ul(class= ""+classname style="display: block;")
+    each item in data
+      li
+        a.catalog-menu__sublink(href=`${item.url}`)= item.name          
+
+mixin subMenu(classname, data)
+  ul(class= ""+classname)
+    each item in data
+      li
+        a.catalog-menu__sublink(href=`${item.url}`)= item.name   
+
+
+#catalog-menu.catalog-menu.catalog-menu_visible1
+
+    .basket-inner.page-inner--w2
+      .catalog-open.catalog-menu__close
+      .basket-menu-sections.simplebar__wrapper
+        .basket-mobile-menu__body.simplebar
+            ul.catalog-menu__list.accordion.accordion_catalog-menu.simplebar__width
+              li
+                a.catalog-menu__link.submenu.bold.active(href='#cm1') NEW
+              li
+                a.catalog-menu__link.bold(href='#cm2') LOOKBOOK
+              li.accordion-item.opened
+                .accordion-item-heading
+                  a.catalog-menu__link(href='#cm3') SS`22
+                +subMenuOpen('accordion-item-content show', data1)
+              li
+                a.catalog-menu__link(href='#cm4') OFFICE
+              li
+                a.catalog-menu__link(href='#cm5') ЛЕН
+              li
+                a.catalog-menu__link(href='#cm7') EVENING
+              li
+                a.catalog-menu__link(href='#cm8') Верхняя одежда
+              li
+                a.catalog-menu__link(href='#cm6') СПОРТ
+              li.accordion-item
+                .accordion-item-heading
+                  a.catalog-menu__link(href='#cm9') ПЛАТЬЯ | КОМБИНЕЗОНЫ
+                +subMenu('accordion-item-content', data2)
+              li
+                a.catalog-menu__link(href='#cm10') джемперы
+              li
+                a.catalog-menu__link(href='#cm11') КАРДИГАНЫ
+              li
+                a.catalog-menu__link(href='#cm12') ЖАКЕТЫ
+              li
+                a.catalog-menu__link(href='#cm13') ЖИЛЕТЫ
+              li
+                a.catalog-menu__link(href='#cm14') РУБАШКИ
+              li
+                a.catalog-menu__link(href='#cm15') ВОДОЛАЗКИ
+              li
+                a.catalog-menu__link(href='#cm16') БРЮКИ
+              li.accordion-item
+                .accordion-item-heading
+                  a.catalog-menu__link(href='#cm17') ЮБКИ
+                +subMenu('accordion-item-content', data3)
+              li
+                a.catalog-menu__link(href='#cm18') ШОРТЫ
+              li
+                a.catalog-menu__link(href='#cm19') ФУТБОЛКИ
+              li
+                a.catalog-menu__link(href='#cm19') ТОПЫ
+              li
+                a.catalog-menu__link(href='#cm19') БОДИ
+              li
+                a.catalog-menu__link(href='#cm19') КОМПЛЕКТЫ
+              li
+                a.catalog-menu__link(href='#cm19') АКСЕССУАРЫ
+              li
+                a.catalog-menu__link(href='#cm19') ДЕТИ
+              li
+                a.catalog-menu__link(href='#cm19') THE MOUNTAINS
+              li
+                a.catalog-menu__link(href='#cm19') КАШЕМИР
+              li
+                a.catalog-menu__link.catalog-menu__separator.catalog-menu__link-red(href='#cm19') SALE
+              //- // <li class="catalog-menu__separator"></li>
+              li
+                a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Мои заказы
+              li
+                a.catalog-menu__link.catalog-menu__link_lowercase.mb-20px(href='#cm19') Личный кабинет
+              li
+                a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') О компании
+              li
+                a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Магазины
+              li
+                a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Подарочные сертификаты
+              li
+                a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Доставка и оплата
+              li
+                a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Гарантия и возврат
+              li
+                a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Система лояльности
+              li
+                a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Блог
+              li.catalog-menu-footer
+                a(href='favorites.html') Избранное (2)
+                a(href='#') Вход
+              li  
