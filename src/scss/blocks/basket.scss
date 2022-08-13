@@ -1,0 +1,134 @@
+.basket {
+    // border: 1px solid red;
+
+    &__header {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    &__body {
+        display: flex;
+        gap: 117px;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+
+        .order-aside {
+            padding: 40px;
+            background: #F7F5F5;
+            border-radius: 0;
+            min-width: 526px;
+
+            @media screen and (max-width: 530px) {
+                border: 1px solid red;
+                min-width: auto;
+            }
+        }
+    }
+
+    &__body-left {
+        flex: 3;
+    }
+
+    &__body-right {
+        flex: 1;
+    }
+
+}
+
+.basket-inner {
+    padding: 40px;
+}
+
+.filter-row__inner {
+    padding: 30px 24px;
+    max-height: 414px; //для прокрутки блка .simplebar
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+
+    label.form-radio {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+    }
+
+    .form-radio .jcf-radio {
+        top: 3px;
+    }
+}
+
+.basket__pickup {
+    margin-left: 30px;
+    margin-top: 63px;
+
+    li {
+        margin-bottom: 43px;
+    }
+
+}
+
+.basket__pickup-data {
+    margin-top: 15px;
+}
+
+.ml-30px {
+    margin-left: 30px;
+}
+
+.basket-form {
+    
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .filter-row,
+    .simplebar {
+        max-height: 414px; //для прокрутки блка .simplebar
+        width: 100%;
+
+    }
+
+    .filter-row {
+        // border: 1px solid #1D1D1D;
+        border: 1px solid #e1e1e1;
+        margin-bottom: 10px;
+    }
+
+    .form-row-payment {
+        display: flex;
+
+        label {
+            margin-right: 23px;
+        }
+    }
+}
+
+.basket-form .filter-row.black-border {
+    border: 1px solid #1d1d1d;
+}
+
+.filter-row {
+
+    &__form-radio {
+        display: flex;
+    }
+
+    &__radio-coll,
+    &__text-coll {
+        display: flex;
+        flex: 1;
+    }
+
+    &__radio-coll {}
+
+}
+
+.form-row__title {
+    display: flex;
+    justify-content: space-between;
+}

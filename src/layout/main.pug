@@ -3,23 +3,23 @@ doctype html
 block variables
 
 //- общие данные 
-//- include ../utils/data   
+include ../utils/data   
 
 //- общие миксины
-//- include ../utils/mixins 
+include ../utils/mixins 
 
 
 html.no-js(lang='ru' prefix='og:http://ogp.me/ns#')
   include ../modules/head
-  body body
+  body.overflow-x 
     .page
       include ../modules/page-note
       include ../modules/header
 
       block content
 
-      //- include ../modules/footer
-    //- include ../modules/footer-popups
+      include ../modules/footer
+    include ../modules/footer-popups
     //- include ../modules/footer-scripts 
 
 //- блок для вспл окошек на отдельной стр
@@ -27,5 +27,5 @@ html.no-js(lang='ru' prefix='og:http://ogp.me/ns#')
 //- block footer-popups 
 
 //- блок для скриптов на отдельной стр
-//- block script 
+block script 
   

@@ -1,0 +1,74 @@
+@import '../variables.scss';
+
+.btn {
+    font-family: "SFProDisplay", "Arial", sans-serif;
+    background-color: $color-black;
+    color: $color-white;
+}
+
+.btn--medium {  
+    min-width: 180px;
+    max-width: 280px;
+    height: 55px;
+    padding: 0 35px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+
+    @media screen and (max-width:768px) {
+        min-width: 183px;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 10px;
+    }
+}
+
+.btn--large { 
+    min-width: 199px;
+    max-width: 280px;
+    height: 75px;
+    padding: 0 35px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+
+    // @media screen and (max-width:768px) {
+    //     border: 1px solid blue !important;
+    //     min-width: 183px;
+    //     height: 40px;
+    //     padding: 0 20px;
+    //     font-size: 10px;
+    // }
+}
+
+.btn--black,
+.btn--black_border.btn--medium,
+.btn--black_border.btn--small {
+    border-radius: 0;
+}
+
+.btn--black {
+
+    &:hover {
+        border-color: $color-btn--black-hover;
+        background-color: $color-btn--black-hover;
+    }  
+}
+
+.btn--black_border {
+    border: 1px solid $color-black;
+    color: $color-white;
+
+    &:hover {
+        border-color: $color-black;
+        background-color: $color-black;
+        color: $color-white;
+    }
+}
+
+.btn--fullwidth {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+

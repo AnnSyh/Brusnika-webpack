@@ -1,0 +1,15 @@
+.look {
+    border: 1px solid red;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, calc(50% - 20px));
+
+    &__big-foto {
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        img {
+            width: 100%;
+        }
+    }
+}

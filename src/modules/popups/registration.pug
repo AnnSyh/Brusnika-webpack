@@ -1,0 +1,39 @@
+#registration-popup.page-popup.mfp-hide
+  .page-popup-heading
+    .page-popup-title РЕГИСТРАЦИЯ
+        .page-popup-title--small После регистрации на сайте вам будет доступно отслеживание 
+        | состояния заказов, личный кабинет и другие новые возможности.
+
+    form.form
+        .form-row
+            label.form-item-label(for='f1') Имя
+            input#f1.form-item.form-item--text(type='text' name='f1' data-validation='{"message": "Обязательное поле"}' required='' value='Максим')
+        .form-row
+            label.form-item-label(for='f12') Отчество
+            input#f1.form-item.form-item--text(type='text' name='f12' data-validation='{"message": "Обязательное поле"}' required='' value='Отчество')
+        .form-row
+            label.form-item-label(for='f13') Фамилия
+            input#f1.form-item.form-item--text(type='text' name='f13' data-validation='{"message": "Обязательное поле"}' required='' value='Фамилия')
+        .form-row
+            label.form-item-label(for='f3') E-mail
+            input#f3.form-item.form-item--text(type='email' name='f3' required='' data-validation='{"message": "Укажите корретный адрес почты"}' value='petrov@gmail.com')
+        .form-row
+            label.form-item-label(for='f4') Телефон
+            input#f4.form-item.form-item--text(type='text' name='f4' data-validation='{"message": "Укажите корректный номер телефона", "pattern": "phoneRU", "mask": "+7 (999) 999-99-99"}' required='' value='+7 556 666-66-6')
+        .form-row
+            label.form-item-label(for='reg_pass1') Новый пароль
+            input#reg_pass1.form-item.form-item--password(type='password' name='reg_pass1' required='' data-validation='{"minlength": "6", "message": {"required": "", "minlength": "Минимальная длина пароля – 6 символов"}}')
+            span.password-show  
+        .form-row
+            label.form-item-label(for='reg_pass2') Новый пароль еще раз
+            input#reg_pass2.form-item.form-item--password(type='password' name='reg_pass2' required='' data-validation='{"minlength": "6", "equalTo": "#reg_pass1", "message": {"equalTo": "Пароли не совпадают", "required": "", "minlength": "Минимальная длина пароля – 6 символов"}}')
+            span.password-show
+        .form-row.form-row--checkbox
+            input#saile.form-item.form-item--checkbox.catalog-item-checkbox(type='checkbox' checked='checked')
+            label(for='saile') Получать новости об акциях и скидках
+            p
+        .form-row
+            button.btn.btn--black.btn--medium(type='submit') Зарегистрироваться
+            .page-heading-text.mt-4
+            | Нажимая на кнопку «Зарегестрироваться»
+            | вы соглашаетесь на обработку персональных данных

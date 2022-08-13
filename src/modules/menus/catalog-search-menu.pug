@@ -26,7 +26,7 @@ mixin listLinks(classname,titlename,...items)
                   .col-md-3.col-sm-6
                     .catalog-item.w1
                       .catalog-item-photo-holder
-                        img.cover(src=`../dummy/catalog/${item.img}`)
+                        img.cover(src=require(`./dummy/catalog/${item.img}`) alt='')
                       .catalog-item-title= item.title
                       .catalog-item-price= item.price
                       a.catalog-item-link(href=`${item.href}`)

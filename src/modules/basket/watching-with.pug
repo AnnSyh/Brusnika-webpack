@@ -1,0 +1,18 @@
+.order-table__title.order-table__mr С этим товаром смотрят
+each item in BasketProductsMenuWatchWith
+  .order-table__block.order-table__mr
+    .order-table.basket
+      .order-table__row
+        .order-table__item
+          .order-table__img
+            .order-photo-holder
+              img.cover(src=require(`./dummy/catalog/${item.img}`))
+          .order-table__info
+            div.order-table__row
+              .order-table__name= item.title 
+              a.order-table-heart(href='#') 
+            .order-table__price= item.price + ' Р'
+            .order-table__link
+              a(href='#') +2 цвета
+            .order-table__link
+              a(href='#') Добавить к заказу

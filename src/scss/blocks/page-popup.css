@@ -1,0 +1,66 @@
+.page-popup {
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 430px;
+  padding: 55px 45px;
+}
+.page-popup-w565 {
+  max-width: 565px;
+}
+.page-popup-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.page-popup-title--small {
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.page-popup .form-label {
+  color: #666666;
+}
+.page-popup .form .link {
+  text-decoration: underline;
+}
+.page-popup .tabs-heading .tab-heading-item {
+  min-width: auto;
+  white-space: nowrap;
+}
+.page-popup .check-dimensions-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.page-popup .size-list {
+  display: flex;
+  justify-content: space-between;
+}
+.page-popup .size-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  color: #1d1d1d;
+  text-decoration: none;
+}
+.page-popup .size-list a .active, .page-popup .size-list a:hover {
+  color: #fff;
+  background-color: #1d1d1d;
+}
+
+.page-popup .size-list a.active {
+  color: #fff;
+  background-color: #1d1d1d;
+}
+
+button.basket-open {
+  border: 1px solid red;
+}/*# sourceMappingURL=page-popup.css.map */

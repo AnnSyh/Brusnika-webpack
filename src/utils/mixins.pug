@@ -1,0 +1,72 @@
+//- одноуровневый список
+mixin listOne(classname, data)
+	ul(class= ""+classname)
+		each item in data
+			li= item.name
+
+//- список (для desktop карточки магазинов стр shops.html)
+mixin listShopFiltersDesktop(classname, data)
+	ul(class= ""+classname)
+		each item in data
+			li 
+				a(href=`${item.href}`)=item.name
+//- список (для mobile карточки магазинов стр shops.html)
+mixin listShopFiltersMobile(data)
+		each item in data
+			a(href=`${item.href}`)=item.name
+
+//- двухуровневый список(для карточки товара)
+mixin listTwo(classname, data)
+	ul(class= ""+classname)
+		each item in data
+			li
+				dl.product__availability
+					dt= item.name
+					span= item.balance 
+
+//- список соц сетей
+mixin listSocial(classname,...items)
+	ul(class= ""+classname)
+		each item in items
+			li(class="social-link social-link__" +item)= item
+
+//-  список sitemap
+mixin listSitemapLinks(classLink, data)
+	each item in data
+		a(class= ""+classLink href=`${item.href}`)= item.name
+		br
+
+mixin nav(link,title)
+	if(title === 'Ссылка 1')
+		li.main-nav__item.main-nav__item--active
+			a(href=link).main-nav__link=title
+	else
+		li.main-nav__item
+			a(href=link).main-nav__link=title      
+
+mixin tabList(classname,...labels)
+	div(class= ""+classname)
+		.tabs-heading.size-items
+			each label in labels
+				label(data-tab="#size-tabs_" +label data-tabs=".size-tab")
+					.size-item-content
+						.size-item-title= label
+		.tabs-content
+			each label in labels
+				.tab-content-item.size-tab(id="size-tabs_" +label)= 'контент таба ' +label
+
+mixin table(classname,...rows)
+	div(class= ""+classname id=""+id)
+		each row in rows
+			div(class=""+classname + '__row')
+				div Российский размер
+				div 40 – 42
+
+mixin menu(classname, data, activeLink)
+	div(class= ""+classname)
+		each item in data
+			div(class='personal-menu-item')
+				if (activeLink === item.name)
+					a(href=`${item.url}` class=`link link--black active`)= item.name  
+				else 
+					a(href=`${item.url}` class=`link link--black`)= item.name  

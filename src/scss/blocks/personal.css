@@ -1,0 +1,51 @@
+.personal {
+  display: flex;
+  flex-direction: row;
+  gap: 222px;
+  flex-wrap: wrap;
+}
+.personal__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.personal-menu {
+  max-width: 100%;
+  min-width: 250px;
+  min-height: 376px;
+  padding: 45px 50px;
+  background-color: #f7f5f5;
+  border-radius: 0;
+}
+.personal-menu a,
+.personal-menu a:hover {
+  color: #1d1d1d;
+  text-decoration: none;
+}
+.personal-menu a.active {
+  font-weight: bold;
+}
+.personal-menu__link {
+  margin-bottom: 15px;
+  color: #1d1d1d;
+}
+.personal__menu {
+  width: 320px;
+}
+.personal__content {
+  min-width: 456px;
+}
+.personal__link {
+  position: relative;
+}
+.personal__link .loyalty-card {
+  top: 25px;
+  left: -138px;
+  position: relative;
+}
+
+.page-section_personal {
+  padding-bottom: 0;
+}/*# sourceMappingURL=personal.css.map */

@@ -1,0 +1,68 @@
+form.form.basket-form 
+  div(style="max-width: 718px;")
+    .basket-form__title 1.Доставка
+    .form-row
+      label.form-item-label(for='city') Ваш город
+      input#city.form-item.form-item--text(type='text' name='city' data-validation='{"message": "Обязательное поле"}' required='' value='Ростов-на-Дону')
+
+    .filter-row.filter-row-basket
+      .simplebar
+        .filter-row__inner
+          label.form-radio
+            input.form-item.form-item--radio(type='radio' name='pickup')
+            | Самовывоз из магазина  
+            br
+            | Бесплатно
+          ul.basket__pickup
+            each item in pickupItems
+              li
+                label.form-radio
+                  input.form-item.form-item--radio(type='radio' name='product')
+                  .form-radio__item
+                    .basket__pickup-metro= item.metro
+                    .basket__pickup-address= item.address
+                    .basket__pickup-data= item.data
+          a.link.link--gray_border.small.ml-30px(href='#show-on-map-popup' data-popup='{"type":"inline"}') Показать на карте
+
+          //- include ../map
+
+    each item in dostavkaItems
+      .filter-row
+        .filter-row__inner
+          label.filter-row__form-radio
+            .filter-row__radio-coll
+              input.form-item.form-item--radio(type='radio' name='pickup')
+              div= item.item 
+            .filter-row__text-coll= item.text 
+
+
+  .form-row__title
+    .basket-form__title 2. Контактные данные
+    span
+        a.link.link--black_border(href="#") Уже зарегистрированы?
+  .form-row
+    .form-group
+      .form-group-inner
+        .form-group-item.form-group-item--w32
+          label.form-label(for='ord_name') Фамилия/Имя/Отчество
+          input#ord_name.form-item.form-item--text.form-item--middle(type='text' name='ord_name' required='' data-validation='')
+        .form-group-item.form-group-item--w32
+          label.form-label(for='ord_phone') Телефон
+          input#ord_phone.form-item.form-item--text.form-item--middle(type='text' name='ord_phone' required='' data-validation='{"pattern": "phoneRU", "mask": "+7 (999) 999-99-99"}')
+        .form-group-item.form-group-item--w32
+          label.form-label(for='ord_email') Почта
+          input#ord_email.form-item.form-item--text.form-item--middle(type='email' name='ord_email' required='' data-validation='{"message": "Пользователь с таким именем  зарегистрирован"}')
+
+
+  .basket-form__title 3. Оплата
+  .form-row
+    .form-row-payment
+      label.form-radio
+        input.form-item.form-item--radio(type='radio' name='ord_payment' value='1')
+        span.form-radio-title Банковской картой на сайте
+      label.form-radio
+        input.form-item.form-item--radio(type='radio' name='ord_payment' value='4')
+        span.form-radio-title Оплата при получении
+
+
+

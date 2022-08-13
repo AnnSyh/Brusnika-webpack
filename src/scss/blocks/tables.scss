@@ -1,0 +1,13 @@
+.table-size__row {
+	justify-content: space-between;
+	display: flex;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	&:nth-of-type(2n) {
+		background-color: #F6F5F5;
+	}
+}
+.size-table .tabs-content {
+	margin: 0 -10px;
+}

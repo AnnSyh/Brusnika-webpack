@@ -1,0 +1,361 @@
+
+//- данные для brand.html
+- 
+  const items = [
+    {image: 'c11.jpg', price: '3000', name: '1Жакет 4321', label: 'Хит'},
+    {image: 'c22.jpg', price: '345', name: '1Жакет 2', label: 'Хит'},
+    {image: 'c23.jpg', price: '2329', name: '1Жакет 3', label: 'Хит'},
+    {image: 'c24.jpg', price: '2329', name: '1Жакет 4', label: 'Хит'}
+    ]
+
+- 
+  const tovars = [
+        {image: 'c1.jpg', price: '1999', name: '2Жакет 3331', label: 'Хит'},
+        {image: 'c22.jpg', price: '345', name: '2Жакет 2', label: 'Хит'},
+        {image: 'c23.jpg', price: '2329', name: '2Жакет 3', label: 'Хит'},
+        {image: 'c24.jpg', price: '2329', name: '2Жакет 4', label: 'Хит'},
+        {image: 'c1.jpg', price: '1999', name: '2Жакет 1', label: 'Хит'},
+        {image: 'c22.jpg', price: '345', name: '2Жакет 2', label: 'Хит'},
+        {image: 'c23.jpg', price: '2329', name: '2Жакет 3', label: 'Хит'},
+        {image: 'c24.jpg', price: '2329', name: '2Жакет 44', label: 'Хит'}
+        ]
+
+//-  данные для card.html
+- 
+    const dataList = [
+      {name: 'Vnukovo Premium Outlet', balance: '1'},
+      {name: 'Лесная, Москва', balance: '1'},
+      {name: 'ТРК "Европолис" СПб', balance: '1'},
+      {name: 'ТРК "Тандем", Казань', balance: '1'},
+      {name: 'Хохрякова, Екатеринбург', balance: '2'},
+      ]
+
+    const dataListMeasurements = [
+      {name: 'Ширина по талии', balance: '33'},
+      {name: 'Длина изделия', balance: '84'},
+      {name: 'Ширина по бедрам', balance: '40'},
+      {name: 'Длина рукава с плечом', balance: '27'},
+      {name: 'Ширина по груди', balance: '38'},
+      ]
+
+    const dataListProductCare = [
+      {name: '- Ручная стирка с жидким порошком в прохладной воде до 30°С'},
+      {name: '- Не отбеливать'},
+      {name: '- Не использовать машинную сушку'},
+      {name: '- Гладить с изнаночной стороны утюгом до 110°С, либо отпаривателем'},
+      {name: '- Химчистка с использованием тетрахлорэтилена в щадящем режиме'},
+      ] 
+
+//- данные для card.html 'Завершите свой образ'
+- 
+  const looks = [
+    {image: 'c2.jpg', price: '6 500', name: 'Брюки'},
+    {image: 'c9.jpg', price: '14 800', name: 'Топ'},
+    {image: 'c25.jpg', price: '12 500', name: 'Жакет'}
+    ]
+
+//- данные для card.html 'Завершите свой образ'
+- 
+  const favorites = [
+        {image: 'c1.png', price: '1999', name: '22Жакет 1', label: 'Хит'},
+        {image: 'c2.png', price: '345', name: 'Жакет 2', label: 'Хит'},
+        {image: 'c3.png', price: '2329', name: 'Жакет 3', label: 'Хит'},
+        {image: 'c4.png', price: '2329', name: 'Жакет 4', label: 'Хит'},
+        {image: 'c5.png', price: '1999', name: 'Жакет 1', label: 'Хит'},
+        {image: 'c6.png', price: '345', name: 'Жакет 2', label: 'Хит'},
+        {image: 'c7.png', price: '2329', name: 'Жакет 3', label: 'Хит'},
+        {image: 'c8.png', price: '2329', name: 'Жакет 44', label: 'Хит'}
+        ] 
+
+//- - данные для фильтра цвета стр brand.html
+- 
+  const colors = [
+    {name: 'Бежевый', class: 'beige'},
+    {name: 'Красный', class: 'red'},
+    {name: 'Белый', class: ''},
+    {name: 'Ментол', class: 'menthol'},
+    {name: 'Бирюзовый', class: 'turquoise'},
+    {name: 'Оранжевый', class: 'orange'},
+    {name: 'Бордовый', class: 'burgundy'},
+    {name: 'Розовый', class: 'pink'},
+    {name: 'Голубой', class: 'blue'},
+    {name: 'Серебро', class: 'silver'},
+    {name: 'Деним', class: 'denim'},
+    {name: 'Серый', class: 'grey'},
+    {name: 'Желтый', class: 'yellow'},
+    {name: 'Синий', class: 'blue'},
+    {name: 'Зеленый', class: 'green'},
+    {name: 'Сиреневый', class: 'lilac'},
+    {name: 'Золото', class: 'gold'},
+    {name: 'Фиолетовый', class: 'violet'},
+    {name: 'Изумрудный', class: 'emerald'},
+    {name: 'Фуксия', class: 'fuchsia'},
+    {name: 'Коричневый', class: 'brown'},
+    {name: 'Хаки', class: 'khaki'},
+    {name: 'Молочный', class: 'lactic'},
+    {name: 'Черный', class: 'black'},
+    ]  
+
+//- - данные для фильтра сортировка стр brand.html             
+- 
+  const prices = [
+    {name: 'Цена по убыванию'},
+    {name: 'Цена по возврастанию'},
+    {name: 'Сначала новые'},
+    {name: 'Сначала хиты продаж'},
+    ]
+
+//- - данные для фильтра материалы стр brand.html    
+- 
+  const materials = [
+    {name: 'Вискоза'},
+    {name: 'Кашемир'},
+    {name: 'Лен'},
+    {name: 'Мохер'},
+    {name: 'Полиэстер'},
+    {name: 'Хлопок'},
+    {name: 'Шерсть'},
+    {name: 'Шифон'},
+    {name: 'Эко-кожа'},
+    {name: 'Эко-мех'},
+    ]    
+
+//- - данные для фильтра размеры стр brand.html    
+- 
+  const sizes = [
+    {name: '1One size', growth1: 'Рост H1', growth2: 'Рост H1'},
+    {name: 'XS(RU36-38)', growth1: 'XS(RU36-38)', growth2: 'XS(RU36-38)'},
+    {name: 'S(RU40-42)', growth1: 'S(RU40-42)', growth2: 'S(RU40-42)'},
+    {name: 'M(RU44-46)', growth1: 'M(RU44-46)', growth2: 'M(RU44-46)'},
+    {name: 'L(RU48-50)', growth1: 'L(RU48-50)', growth2: 'L(RU48-50)'},
+    {name: 'XL(RU52-54)', growth1: 'XL(RU52-54)', growth2: 'XL(RU52-54)'},
+    {name: 'XL(RU56-58)', growth1: '', growth2: ''},
+
+    ]   
+
+//- - данные для 'Таблица размеров'-выезжает справа стр card.html    
+-
+  const oneRows = [{name:'Российский размер', size:'40 – 42'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const twoRows = [{name:'Российский размер', size:'42 – 44'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const threeRows = [{name:'Российский размер', size:'44 – 46'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const fourRows = [{name:'Российский размер', size:'46 – 48'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const fiveRows = [{name:'Российский размер', size:'48 – 50'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const sixRows = [{name:'Российский размер', size:'50 – 52'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const sevenRows = [{name:'Российский размер', size:'52 – 54'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+
+ 
+//- - данные для слайдера 'Ранее вы смотрели' 
+//- стр: brand.html, search.html,
+- 
+  const cards = [
+    {image: 'c21.jpg', price: '1999', name: 'Жакет 1', label: 'Хит'},
+    {image: 'c22.jpg', price: '345', name: 'Жакет 2', label: 'Хит'},
+    {image: 'c23.jpg', price: '2329', name: 'Жакет 3', label: 'Хит'},
+    {image: 'c24.jpg', price: '2329', name: 'Жакет 4', label: 'Хит'},
+    {image: 'c21.jpg', price: '1999', name: 'Жакет 1', label: 'Хит'},
+    {image: 'c22.jpg', price: '345', name: 'Жакет 2', label: 'Хит'},
+    {image: 'c23.jpg', price: '2329', name: 'Жакет 3', label: 'Хит'},
+    {image: 'c24.jpg', price: '2329', name: 'Жакет 4', label: 'Хит'}
+  ]
+   
+//- - данные для слайдера 'Вам также может понравиться' 
+//- стр: card.html
+- 
+    const likedItems = [
+        {image: 'c21.jpg', price: '1999', name: 'Жакет 1', label: 'Хит'},
+        {image: 'c22.jpg', price: '345', name: 'Жакет 2', label: 'Хит'},
+        {image: 'c23.jpg', price: '2329', name: 'Жакет 3', label: 'Хит'},
+        {image: 'c24.jpg', price: '2329', name: 'Жакет 4', label: 'Хит'}
+        ]
+
+//- - данные для списка 'Товары в корзине' -выезжает с права
+//- стр: card.html        
+- 
+  const BasketProductsMenu = [
+    {img: '2.jpg', title: 'БРЮКИ', price: '15 900', size: '41', color: 'коричневый'},
+    //- {img: 'c2.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', size: '41', color: 'коричневый'},
+    //- {img: 'c3.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', size: '41', color: 'коричневый'},
+    //- {img: 'c4.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', size: '41', color: 'коричневый'},
+    ]
+//- - данные для списка 'Товары в корзине' 
+//- стр: basket.html        
+- 
+  const BasketProducts = [
+    {img: '1.jpg', title: 'БРЮКИ', price: '15 900', size: '41', color: 'коричневый'},
+    {img: '2.jpg', title: 'БРЮКИ', price: '16 900', size: '42', color: 'синий'},
+    {img: '3.jpg', title: 'БРЮКИ', price: '17 900', size: '43', color: 'белый'},
+    {img: '4.jpg', title: 'БРЮКИ', price: '18 900', size: '44', color: 'зеленый'},
+    ]
+
+//- - данные для списка 'С этим товаром смотрят' -выезжает с права
+//- стр: card.html      
+- 
+  const BasketProductsMenuWatchWith = [
+    {img: 'c1.jpg', title: 'БРЮКИ', price: '15 900', size: '41', color: 'коричневый'},
+    {img: 'c1.jpg', title: 'БРЮКИ', price: '15 900', size: '41', color: 'коричневый'},
+    ]
+
+//- - данные для меню 'Поиск' -выезжает сверху
+//- стр: card.html     
+- 
+  const searchProducts = [
+    {img: 'c1.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', href: '#'},
+    {img: 'c2.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', href: '#'},
+    {img: 'c3.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', href: '#'},
+    {img: 'c4.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', href: '#'},
+    ]
+
+//- - данные для попап 'Уточните необходимые размеры' 
+//- стр: card.html      
+- 
+  const dataClozes = [
+    {name: 'Жакет'},
+    {name: 'Брюки'},
+    {name: 'Топ'},
+    ]
+
+//- - данные для меню 'Покупателям' 
+//-  стр: card.html
+- 
+    const firstBuyersItems = [
+        {name: 'Подарочные сертификаты', href: '#cm1'},
+        {name: 'Доставка и оплата', href: '#cm2'},
+        {name: 'Гарантия и возврат', href: '#'}, 
+        {name: 'Система лояльности', href: '#'},
+        {name: 'Руководство по покупке', href: '#'},
+        {name: 'Работа у нас', href: '#'},
+        ]
+    const secondBuyersItems = [
+        {name: 'Telegram', href: '#cm1'},
+        {name: 'Вконтакте', href: '#cm2'},
+        {name: '8 800 350 89 91', href: 'tel:+88003508991'}, 
+        {name: '+7 929 608 13 32', href: 'tel:+79296081332'},
+        ]
+    const thirdBuyersItems = [
+        {name: 'О компании', href: '#cm1'},
+        {name: 'Контакты', href: '#cm2'},
+        {name: 'Магазины', href: '#'}, 
+        {name: 'Мои заказы', href: '#'},
+        ]
+
+//- - данные для Самовывоза
+//-  стр: basket.html
+- 
+    const pickupItems = [
+        {metro:'ТРЦ Горизонт',               address: 'пр-т Михаила Нагибина, д. 32/2, ТРЦ «Горизонт», «Премиум-галерея» 1 этаж (с 10:00 до 22:00) ', data:'Можно забрать 1 июня, в субботу'},
+        {metro:'Проспект Чехова, д. 51–53 ', address: 'проспект Чехова, д. 51-53 (с 09:00 до 21:00)',                                                 data:'Можно забрать 1 июня, в субботу'},
+        {metro:'Проспект Чехова, д. 51–53 ', address: 'проспект Чехова, д. 51-53 (с 09:00 до 21:00)',                                                 data:'Можно забрать 1 июня, в субботу'},
+        {metro:'Проспект Чехова, д. 51–53 ', address: 'проспект Чехова, д. 51-53 (с 09:00 до 21:00)',                                                 data:'Можно забрать 1 июня, в субботу'},
+        {metro:'Проспект Чехова, д. 51–53 ', address: 'проспект Чехова, д. 51-53 (с 09:00 до 21:00)',                                                 data:'Можно забрать 1 июня, в субботу'},
+        {metro:'Проспект Чехова, д. 51–53 ', address: 'проспект Чехова, д. 51-53 (с 09:00 до 21:00)',                                                 data:'Можно забрать 1 июня, в субботу'},
+        ]
+
+//- - данные для Доставки
+//-  стр: basket.html
+- 
+    const dostavkaItems = [
+        {item:'Курьерска служба СДЭК с бесплатной примеркойот 160  Р',  text: 'Примерка 15 минут. Если после примерки не подошла вещь, вы можете вернуть её курьеру.'},
+        {item:'Пункты выдачи СДЭК от 238 Р',                            text: 'Доставка заказа в один из пунктов самовывоза компании СДЭК.'},
+        {item:'Пункты выдачи Via Delivery от 193 Р',                    text: 'Доставка заказов с выдачей на кассе в Пятерочке или в отделениях СберБанка.'},
+        ]
+    //- - данные для ЛичногоКабинета
+    //-  стр: orders.html, history.html....
+    //- Пункты меню
+    //- есть еще personalMenuData1 в dev\modules\menus\personal-menu.pug
+    //- со скобочками (1)
+    const personalMenuData = [
+        {name: 'Текущие заказы',    url: 'orders.html'},
+        {name: 'История заказов',   url: 'history.html'},
+        {name: 'Корзина',           url: 'basket.html'}, 
+        {name: 'Избранное',         url: 'favorites.html'},
+        {name: 'Личные данные',     url: 'personal.html'},
+        {name: 'Выйти',             url: '#'},
+        ]
+    //- - данные для Карта сайта
+    //-  стр: sitemap.html
+    //- Пункты меню
+    const sitemapBuyer = [
+        {name: 'Доставка и оплата', href: '#'},
+        {name: 'Обмен и возврат',   href: '#'},
+        {name: 'Частые вопросы',    href: '#'}, 
+        {name: 'Как выбрать размер',href: '#'},
+        ]
+
+    const sitemapAboutCompany = [
+        {name: 'О компании',           href: '#'},
+        {name: 'Программа лояльности', href: '#'},
+        {name: 'Работа у нас',         href: '#'}, 
+        {name: 'Контакты',             href: '#'},
+        {name: 'Политика конфиденциальности', href: '#'},
+        ]
+    const sitemapSS22 = [
+        {name: 'Summer city vibe',  href: '#'},
+        {name: 'East way',          href: '#'},
+        {name: 'With nature',       href: '#'}, 
+        ]
+
+    const sitemapOuterWear = [
+        {name: 'Пальто',  href: '#'},
+        {name: 'Плащи',   href: '#'},
+        {name: 'Пуховики',href: '#'}, 
+        {name: 'Куртки',href: '#'}, 
+        {name: 'Шубы',href: '#'}, 
+        ]
+
+    const sitemapDressesOveralls = [
+        {name: 'Эко–кожа',  href: '#'},
+        {name: 'Вискоза–хлопок',   href: '#'},
+        {name: 'Шерсть/кашемир',href: '#'}, 
+        {name: 'Комбинезоны',href: '#'}, 
+        {name: 'Лен',href: '#'}, 
+        ]
+
+    const sitemapOveralls = [
+        {name: 'Вискоза',  href: '#'},
+        {name: 'Хлопок',   href: '#'},
+        {name: 'Шерсть/кашемир',href: '#'}, 
+        {name: 'Ангора',href: '#'}, 
+        {name: 'Принтованные',href: '#'}, 
+        ]
+
+    const sitemapBlog = [
+        {name: 'Как носить главный цвет 2022 года',  href: '#'},
+        {name: 'Коллекция East West',   href: '#'},
+        {name: 'Стильный Сasual',href: '#'}, 
+        {name: 'Простая белая майка — мегахит летних коллекций',href: '#'}, 
+        {name: 'Выбираем белое платья на лето',href: '#'}, 
+        {name: '4 способа научить детей полезным вещам',href: '#'}, 
+        {name: '10 модных вещей и аксессуаров ',href: '#'}, 
+        {name: 'в актуальном оттенке',href: '#'}, 
+        {name: 'Главные цвета сезона 2022',href: '#'}, 
+        ]
+
+    //-  стр: shops.html
+    //- Пункты фильтра
+    const shopsFilters = [
+        {name: 'Москва', href: '#'},
+        {name: 'Санкт-Петербург',   href: '#'},
+        {name: 'Екатеринбург',    href: '#'}, 
+        {name: 'Ростов-на-Дону',href: '#'},
+        {name: 'Сочи',href: '#'},
+        {name: 'Краснодар',href: '#'},
+        {name: 'Калининград',href: '#'},
+        {name: 'Якутск',href: '#'},
+        {name: 'Уфа',href: '#'},
+        {name: 'Ставрополь',href: '#'},
+        {name: 'Костанай',href: '#'},
+        {name: 'Zurich',href: '#'},
+        {name: 'Geneve',href: '#'},
+        ]        
+
+  //-  данные для каталога магазинов стр shops.html
+  const shops = [
+        {name: 'BRUSNIKA «Ереван Плаза»', address: 'м. Войковская, м. Тульская, ул. Большая Тульская, д. 13, ТРЦ "Ереван Плаза", 2 этаж', time: 'Пн-Вс: с 10:00 до 22:00', phone: '8 926 734 07 15'},
+        {name: '1 BRUSNIKA «Ереван Плаза»', address: 'м. Войковская, м. Тульская, ул. Большая Тульская, д. 13, ТРЦ "Ереван Плаза", 2 этаж', time: 'Пн-Вс: с 10:00 до 22:00', phone: '8 926 734 07 15'},
+        {name: '2 BRUSNIKA «Ереван Плаза»', address: 'м. Войковская, м. Тульская, ул. Большая Тульская, д. 13, ТРЦ "Ереван Плаза", 2 этаж', time: 'Пн-Вс: с 10:00 до 22:00', phone: '8 926 734 07 15'},
+        {name: '3 BRUSNIKA «Ереван Плаза»', address: 'м. Войковская, м. Тульская, ул. Большая Тульская, д. 13, ТРЦ "Ереван Плаза", 2 этаж', time: 'Пн-Вс: с 10:00 до 22:00', phone: '8 926 734 07 15'},
+        {name: '4 BRUSNIKA «Ереван Плаза»', address: 'м. Войковская, м. Тульская, ул. Большая Тульская, д. 13, ТРЦ "Ереван Плаза", 2 этаж', time: 'Пн-Вс: с 10:00 до 22:00', phone: '8 926 734 07 15'},
+        {name: '5 BRUSNIKA «Ереван Плаза»', address: 'м. Войковская, м. Тульская, ул. Большая Тульская, д. 13, ТРЦ "Ереван Плаза", 2 этаж', time: 'Пн-Вс: с 10:00 до 22:00', phone: '8 926 734 07 15'},
+
+
+        ]

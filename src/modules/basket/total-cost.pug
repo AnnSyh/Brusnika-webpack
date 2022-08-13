@@ -1,0 +1,25 @@
+.order-aside.order-aside-sticky
+  .order-aside__title Общая стоимость 14 760 Р
+  .order-aside__text Вы получаете бесплатную доставку курьером
+  .order-aside__list
+    p Товары на сумму — 11 792 Р
+    p Доставка — Бесплатно
+    p Скидка — 2 940 Р
+  .order-aside__to-pay
+    .order-aside__price К оплате: 14 760 Р
+    span
+      a.link.link--black_border.open-promocode(href='#') Есть промо-код
+  #promocode-block.promocode-block
+    label.form-item-label(for='promocode') Промо-код
+    .promocode-block__row
+      .promocode-block__col
+        input#promocode.form-item.form-item--text(type='text')
+      .promocode-block__col
+        button.btn.btn--medium.btn--black_border.mx-auto(type='button') Применить
+    label.form-item-label(for='card') Карта лояльности
+    .promocode-block__row
+      .promocode-block__col
+        input#card.form-item.form-item--text(type='text')
+      .promocode-block__col
+        button.btn.btn--medium.btn--black_border.mx-auto(type='button') Применить
+  a.btn.btn--large.btn--black.btn--fullwidth(href='#checkout-popup' data-popup='{"type":"inline"}') ОФОРМИТЬ ЗАКАЗ

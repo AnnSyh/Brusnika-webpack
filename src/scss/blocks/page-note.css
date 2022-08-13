@@ -1,0 +1,27 @@
+.page-note {
+  padding: 10px 0;
+  background-color: #F7F5F5;
+}
+.page-note .page-note-text {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1D1D;
+  text-align: center;
+}
+.page-note .page-note-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../svg/close.svg) no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+}
+.page-note .page-note-close:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+}/*# sourceMappingURL=page-note.css.map */

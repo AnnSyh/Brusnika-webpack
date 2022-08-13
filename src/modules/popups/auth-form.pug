@@ -1,0 +1,42 @@
+
+#auth-form.page-popup.mfp-hide
+  .page-popup-inner
+    .page-popup-title Войти
+    .page-popup-title--small Введите свою почту и пароль, чтобы войти.
+    form.form
+      .tabs.form-tabs
+        .tabs-heading.form-tabs-heading
+          .form-tabs-heading-items
+            .tab-heading-item.active.form-tab-heading-item(data-tab='#auth-form_email' data-tabs='.auth-tab') Войдите по E-mail
+            .tab-heading-item.form-tab-heading-item(data-tab='#auth-form_phone' data-tabs='.auth-tab') Войдите через смс
+        .tabs-content.form-tabs-content
+          #auth-form_phone.tab-content-item.auth-tab.show.form-tab-content-item
+            .form-row
+              label.form-label(for='auth_sms') Контактный телефон
+              .form-item-holder
+                input#auth_sms.form-item.form-item--text(type='email' name='auth_sms' required='' data-validation='')
+            .form-row
+              button.btn.btn--black.btn--medium.w100.max-w100(type='submit') ВЫСЛАТЬ КОД
+            .form-row
+              .form-group-inner
+                a.link.link--black_simple(href='#')
+                  span Я забыл пароль  
+                a.link.link--black_simple(href='#')
+                  span Регистрация
+          #auth-form_email.tab-content-item.auth-tab.active.form-tab-content-item
+            .form-row
+              label.form-label(for='auth_email') Ваш E-mail
+              .form-item-holder
+                input#auth_email.form-item.form-item--text(type='email' name='auth_email' required='' data-validation='')
+            .form-row
+              label.form-label(for='auth_pass') Пароль
+              .form-item-holder
+                input#auth_pass.form-item.form-item--password(type='password' name='auth_pass' required='' data-validation='')
+            .form-row
+              button.btn.btn--black.btn--medium.w100.max-w100(type='submit') Войти
+            .form-row
+              .form-group-inner
+                a.link.link--black_simple(href='#')
+                  span Я забыл пароль  
+                a.link.link--black_simple(href='#')
+                  span Регистрация

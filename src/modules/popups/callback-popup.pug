@@ -1,0 +1,17 @@
+#callback-popup.page-popup.mfp-hide
+  .page-popup-heading
+    .page-popup-heading-title.h1.uppercase
+      b Заказать звонок
+    .page-popup-heading-description Постараемся перезвонить в течение 15 минут в будни.
+  form.form
+    .form-fields
+      .form-row
+        label.form-label(for='callback_form_phone') Телефон
+        input#callback_form_phone.form-item.form-item--text(type='text' name='phone' data-validation='{"message": "Укажите номер телефона", "pattern": "phoneRU", "mask": "+7 (999) 999-99-99"}' required='required' placeholder='+7 (__) ___-__-__')
+      .form-row
+        button.btn.btn--black.btn--medium.btn--fullwidth(type='submit') Заказать
+        .form-policy
+          .page-text
+            .small
+              | Нажимая кнопку вы даете согласие на обработку 
+              a(href='#') персональных данных

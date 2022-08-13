@@ -1,0 +1,19 @@
+
+
+.order-table.order-table__mr
+  each item in BasketProductsMenu
+    .order-table__row
+      .order-table__item
+        .order-table__img
+          .order-photo-holder
+            //- img.cover(src=require(`../dummy/orders/${item.img}`))
+            img.cover(src=require(`/src/dummy/orders/${item.img}`))
+        .order-table__info
+          .order-table__name= item.title 
+          .order-table__price= item.price + ' Р'
+          .order-table__size= `1Размер: ${item.size} RU`
+          .order-table__color= `Цвет: ${item.color}` 
+          .order-table__counter
+            input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
+      .col-md-2
+        a.order-table-delete(href='#')  

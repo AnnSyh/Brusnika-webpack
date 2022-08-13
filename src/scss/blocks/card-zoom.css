@@ -1,0 +1,59 @@
+.t-zoom {
+  overflow: hidden;
+}
+.t-zoom .card-zoom {
+  height: auto;
+  opacity: 1;
+}
+.t-zoom .product-photos-nav.slick-initialized.slick-slider.slick-vertical {
+  position: absolute;
+  z-index: 10000;
+  left: 100px;
+}
+
+.card-zoom__image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.card-zoom {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  border: 1px solid red;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.card-zoom img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.card-zoom__holder {
+  overflow: auto;
+  height: 100%;
+}
+
+.scroll-disabled {
+  overflow-y: hidden;
+}
+
+.scroll-disabled.t-zoom .product-photos img {
+  cursor: url(/dev/dummy/zoom-out.svg), zoom-in;
+}
+
+.slick-vertical .slick-slide img {
+  width: 100%;
+}/*# sourceMappingURL=card-zoom.css.map */

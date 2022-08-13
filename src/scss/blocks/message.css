@@ -1,0 +1,14 @@
+.message {
+  max-width: 527px;
+  margin: auto;
+  text-align: center;
+}
+.message__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.message__text {
+  margin-bottom: 30px;
+}/*# sourceMappingURL=message.css.map */

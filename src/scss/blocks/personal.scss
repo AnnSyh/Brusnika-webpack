@@ -1,0 +1,61 @@
+.personal {
+    display: flex;
+    flex-direction: row;
+    gap: 222px;
+    flex-wrap: wrap;
+
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    &-menu {
+        max-width: 100%;
+        min-width: 250px;
+        min-height: 376px;
+        padding: 45px 50px;
+        background-color: #f7f5f5;
+        border-radius: 0;
+
+        a,
+        a:hover {
+            color: #1d1d1d;
+            text-decoration: none;
+        }
+
+        a.active {
+            font-weight: bold;
+        }
+
+        &__link {
+            margin-bottom: 15px;
+            color: #1d1d1d;
+        }
+    }
+
+    &__menu {
+        width: 320px;
+    }
+
+    &__content {
+        min-width: 456px;
+    }
+
+    &__link {
+        position: relative;
+
+        .loyalty-card {
+            top: 25px;
+            left: -138px;
+            position: relative;
+        }
+
+    }
+}
+
+.page-section_personal {
+    padding-bottom: 0;
+}

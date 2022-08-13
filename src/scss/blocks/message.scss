@@ -1,0 +1,15 @@
+.message {
+    max-width: 527px;
+    margin: auto;
+    text-align: center;
+
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px; 
+        margin-bottom: 20px;
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+}

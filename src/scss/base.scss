@@ -1,0 +1,171 @@
+@import 'variables.scss';
+
+
+
+/*** Base ***/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  // border: 1px solid red;
+  font-family: 'SFProDisplay', 'Arial', sans-serif;
+  font-size: 16px;
+  color: $color-black;
+  line-height: 1.4;
+  cursor: default;
+}
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.page-content {
+  padding-bottom: 100px;
+}
+.page-overflow {
+  overflow: hidden;
+}
+.overflow-x {
+  overflow-x: hidden;
+}
+.page-inner {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.page-inner--relative {
+  position: relative;
+}
+.page-inner--w1 {
+  max-width: 100%;
+}
+.page-inner--w2 {
+  max-width: 1610px;
+}
+.page-inner--w3 {
+  max-width: 1200px;
+}
+.page-inner--w4 {
+  max-width: 1000px;
+}
+.page-inner--w5 {
+  max-width: 500px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+/*** //Base ***/
+
+/*** https://annsyh.github.io/Brusnika-pug/dev/css/project-ann.scss ***/
+
+.overflow-x {
+  overflow-x: hidden;
+}
+
+.jcf-number {
+  border-radius: 0px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.max-w100 {
+  max-width: 100%;
+}
+
+.page-inner--w3 {
+  max-width: 1368px;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.hidden-x {
+  overflow-x: hidden;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.txt-red {
+  color: #FF300A;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mb-100px {
+  margin-bottom: 100px;
+}
+
+.mb-50px {
+  margin-bottom: 50px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.white-space-normal {
+  white-space: normal;
+}
+
+.w-100 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.mt-60px {
+  margin-top: 60px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.tooltip_templates {
+  display: none;
+}
+
+
+
+.order-aside-sticky {
+  top: 20px;
+  position: sticky;
+}

@@ -1,0 +1,122 @@
+.size-menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -566px;
+  max-width: 566px;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 10;
+  transition: right 0.3s;
+  background: #fff;
+  padding: 10px 0;
+  height: 100vh;
+  /* display: block;
+  position: fixed;
+  top: 0;
+  right: -566px;
+  max-width: 566px;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  transition: right .3s;
+
+  background: #fff;
+  padding: 10px 0;
+
+  overflow-y: hidden; */
+}
+
+.size-menu_visible {
+  right: 0;
+}
+
+.size-menu__close {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+}
+
+.size-menu__close::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(/src/svg/close.svg) no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.3s opacity cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.size-inner {
+  padding: 40px;
+  height: 100vh;
+}
+
+.size-menu-sections {
+  /* overflow: hidden;
+  height: 100%; */
+  height: calc(100vh - 159px);
+  padding-top: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.size-menu__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  margin: auto;
+}
+
+.size-menu__title_left {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.size-menu__text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.size-item-content {
+  padding: 0 10px;
+}
+
+.size-table {
+  margin-bottom: 20px;
+}
+
+.tabs-heading {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs-heading label {
+  cursor: pointer;
+}
+
+.size-menu .tabs-heading .active {
+  text-decoration: underline;
+}
+
+.size-img img {
+  width: 100%;
+}
+
+.size-menu__body {
+  border: 1px solid red;
+  height: 100%;
+  overflow-y: auto;
+}/*# sourceMappingURL=size-menu.css.map */

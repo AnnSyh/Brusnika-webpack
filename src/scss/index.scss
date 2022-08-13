@@ -1,11 +1,38 @@
+@import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
 @import 'variables.scss';
+
+@import '../../src/css/plugins/bootstrap-grid.min.scss'; 
+@import '../../src/css/plugins/datepicker.min.css'; 
+@import '../../src/css/plugins/jquery.gcSlider.css'; 
+@import '../../src/css/plugins/magnific-popup.css'; 
+@import '../../src/css/plugins/simplebar.scss'; 
+@import '../../src/css/plugins/slick.css'; 
+@import '../../src/css/plugins/tooltipster.bundle.min.css'; 
+
+@import 'base.scss'; 
+@import 'project.scss'; 
 @import 'blocks/page-note.scss'; 
 @import 'blocks/header-menu.scss'; 
+@import 'blocks/catalog-menu.scss'; 
+@import 'blocks/search.scss'; 
+@import 'blocks/btns.scss'; 
+@import 'blocks/catalog.scss'; 
+@import 'blocks/basket.scss'; 
+@import 'blocks/basket-menu.scss'; 
+@import 'blocks/order.scss'; 
+@import 'blocks/size-menu.scss';   
+
+ 
+
+
+
 // @import 'blocks/*.scss'; 
 
-body {
-  font-family: 'SFProDisplay', 'Arial', sans-serif;
-  border: 1px solid red;
-  color: $color-black;
-}
+
+
+@import 'blocks/footer'; 
+
+// @import 'blocks/*.scss'; 
+
+
