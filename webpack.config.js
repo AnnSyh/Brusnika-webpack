@@ -7,11 +7,12 @@ const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 
 module.exports = {
   entry: {
-    main: './src/index.js'
+    index: './src/index.js', 
+    brand: './src/brand.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: 'js/[name].[contenthash].js',
     publicPath: '',
   },
   mode: 'development',
@@ -75,11 +76,18 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: './src/index.pug',
-      minify: false
+      chunks: ['index'],
+      filename: 'index.html',
     }),
-    new HtmlWebpackPugPlugin({
-      adjustIndent: true
+    new HtmlWebpackPlugin({
+      template: './src/brand.pug',
+      chunks: ['brand'],
+      filename: 'brand.html',
     }),
+
+
+
+    
 
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
