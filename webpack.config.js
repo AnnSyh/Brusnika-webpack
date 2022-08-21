@@ -8,7 +8,8 @@ const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 module.exports = {
   entry: {
     index: './src/index.js', 
-    brand: './src/brand.js'
+    brand: './src/brand.js',
+    card: './src/brand.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -83,6 +84,11 @@ module.exports = {
       template: './src/brand.pug',
       chunks: ['brand'],
       filename: 'brand.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/card.pug',
+      chunks: ['card'],
+      filename: 'card.html',
     }),
 
 

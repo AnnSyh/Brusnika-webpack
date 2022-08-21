@@ -1,0 +1,13 @@
+.mobile-filter-item-content
+    a.mobile-filter__link.size-open(href='#') Руководство по размерам
+    each size in sizes
+      .filter-row.filter-row__size
+        label.form-checkbox
+          input(class='form-item form-item--checkbox' type='checkbox')
+          span.form-checkbox-title= size.name
+        label.form-checkbox
+            input(class='form-item form-item--checkbox' type='checkbox')
+            span.form-checkbox-title= size.growth1
+        label.form-checkbox
+            input(class='form-item form-item--checkbox' type='checkbox')
+            span.form-checkbox-title= size.growth2         

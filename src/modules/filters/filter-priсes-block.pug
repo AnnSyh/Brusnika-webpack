@@ -1,0 +1,7 @@
+
+.mobile-filter-item-content
+  each item in prices
+    .filter-row
+      label.form-radio
+        input.form-item.form-item--radio(type='radio' name='product')
+        span.form-radio-title= item.name

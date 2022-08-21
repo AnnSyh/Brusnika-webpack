@@ -1,12 +1,15 @@
-.filters-block {
-    margin-bottom: 40px;
-}
+@import '../variables.scss';
+
 
 .filters-rezult__not-found {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 480px){
+        margin-bottom: 10px;
+    }
 }
 
 .filters-rezult__title {
@@ -14,12 +17,21 @@
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 480px){
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 .filters-rezult__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+
+    @media screen and (max-width: 480px){
+        font-size: 12px;
+    }    
 }
 
 .filters-row {
@@ -27,12 +39,16 @@
     align-items: center;
     flex-direction: row;
     font-weight: 400;
-    /* font-weight: 200; */
     font-size: 12px;
     line-height: 20px;
     text-transform: uppercase;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #E1E1E1;
+    height: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px) { 
+        height: 20px;
+        margin-bottom: 10px;
+    }
 
     @media screen and (max-width: 400px){
         
@@ -86,6 +102,7 @@
 }
 
 .filters-list-small li {
+    list-style-type: none;
     margin-left: 10px;
 }
 
@@ -93,12 +110,18 @@
 .filters-list a {
     white-space: nowrap;
     text-decoration: none;
-    color: #1d1d1d;
+    color: $color-black;
 }
 
+.filters-list-small a {
+    color: #bebebe;
+}
+
+.filters-list-small .active,
 .filters-list-small a:active,
 .filters-list-small a:hover {
-    color: #bebebe;
+    // color: #bebebe;
+    color: #1D1D1D;;
 }
 
 
@@ -110,9 +133,14 @@
     margin-bottom: 80px;
 }
 
+@media screen and (max-width:480px) {
+    .mobile-filter-open {
+        font-size: 10px;
+    }
+}
+
 .link.link--black.mobile-filter-open {
     display: flex;
-    /* flex: 1; */
 }
 
 .catalog-toolbar {
@@ -158,6 +186,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #1D1D1D;
+    color: $color-black;
     margin-bottom: 22px;
 }

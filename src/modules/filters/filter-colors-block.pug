@@ -1,0 +1,7 @@
+.mobile-filter-item-content
+  .row
+      each color in colors
+        .filter-row.col-6
+          label.form-checkbox
+            input(class=`form-item form-item--checkbox filter-checkbox-bg bg-${color.class}` type='checkbox')
+            span.form-checkbox-title= color.name

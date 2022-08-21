@@ -2,18 +2,14 @@
 extends layout/main
 
 block variables
-  - var title = 'brand'
+  - var title = 'card'
   - var mainPage = false
 
 
 block content
   main.page-content
     .page-section.page-section--brand
-      .page-inner.page-inner--w1.page-inner--mobile_empty
-        include modules/filters/filter
-        include modules/filters/filter-rezult-not-found
-      .page-inner.page-inner--w2 
-        include modules/catalog/catalog 
+      .page-inner.page-inner--w2 page-inner
 
         //- block page-inner
 

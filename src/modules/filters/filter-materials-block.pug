@@ -1,0 +1,7 @@
+.mobile-filter-item-content
+  .row
+      each material in materials
+        .filter-row
+          label.form-checkbox
+            input(class='form-item form-item--checkbox' type='checkbox')
+            span.form-checkbox-title= material.name

@@ -42,6 +42,7 @@
 				openedBuyerhMenu: false,
 				openedBasketMenu: false,
 				openedSizeMenu: false,
+				openedFilterMenu: false,
 
 				showTimer: false,
 				hideTimer: false,
@@ -55,8 +56,8 @@
 					self.$basketOpenBtn = $(".basket-open", $sel.page);
 					self.$basketMenu = $("#catalog-basket", $sel.page);
 
-					self.$popupBasketOpenBtn = $("button.basket-open", $sel.page);
-					self.$popupBasketMenu = $("#catalog-basket", $sel.page);
+					self.$popupFilterOpenBtn = $("#catalog-filter .basket-menu__close", $sel.page);
+					self.$popupFilterMenu = $("catalog-filter", $sel.page);
 
 					self.$dropdown = $(".header-menu__item-dropdown", $sel.page);
 					self.$buyerMenu = $("#catalog-buyer-menu", $sel.page);
@@ -96,12 +97,12 @@
 						self.openedBasketMenu ? self.closeBasketMenu() : self.openBasketMenu();
 					});
 
-					self.$popupBasketOpenBtn.on("click", function (e) {
-						console.log('popupBasketOpenBtn');
-						e.preventDefault();
-						e.stopPropagation();
-						self.openedBasketMenu ? self.closeBasketMenu() : self.openBasketMenu();						
-					});
+					// self.$popupBasketOpenBtn.on("click", function (e) {
+					// 	console.log('popupBasketOpenBtn');
+					// 	e.preventDefault();
+					// 	e.stopPropagation();
+					// 	self.openedBasketMenu ? self.closeBasketMenu() : self.openBasketMenu();						
+					// });
 
 					self.$sizeOpenBtn.on("click", function (e) { //раскрытие меню при клике
 						console.log('sizeOpenBtn');
@@ -136,6 +137,18 @@
 								self.closeSizeMenu();
 							}
 						}
+
+						if (!$(e.target).closest("#catalog-filter").length) {
+							console.log('if #catalog-filter opend');
+							// console.log('$sel.body[0].classList = ', $sel.body[0].classList);
+							// $sel.body[0].classList.remove('show-filter');
+
+							// $(".mobile-filter-holder .basket-menu__close", $sel.body).on("click", function () {
+							// 	$sel.body.removeClass("show-filter");
+							// });
+						}
+						
+						
 					});
 
 					$(self.$dropdown, self.$buyerMenu).on("mouseenter click", function (e) { //наведение на пункт 'Покупателям'
@@ -191,6 +204,7 @@
 					self.$menu.removeClass("catalog-menu_visible");
 					self.$btn.removeClass("active");
 					$sel.body.removeClass("catalog-open");
+					$sel.body.removeClass("show-filter");
 					self.opened = false;
 				},
 				openSearchMenu: function () {
@@ -1395,7 +1409,7 @@
 						// bodyScrollLock.disableBodyScroll($(".mobile-filter-scroll-holder", $sel.body)[0]);
 						// bodyScrollLock.disableBodyScroll($(".mobile-filter-scroll-inner", $sel.body)[0]);
 					});
-					$(".mobile-filter .mobile-filter-close", $sel.body).on("click", function () {
+					$(".mobile-filter-holder .basket-menu__close", $sel.body).on("click", function () {
 						$sel.body.removeClass("show-filter");
 						// bodyScrollLock.enableBodyScroll($(".mobile-filter-scroll-holder", $sel.body)[0]);
 						// bodyScrollLock.enableBodyScroll($(".mobile-filter-scroll-inner", $sel.body)[0]);

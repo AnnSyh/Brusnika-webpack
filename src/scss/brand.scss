@@ -1,8 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
-@import 'variables.scss'; 
+@import 'variables.scss';
 
-// plugins
 @import '../../src/css/plugins/bootstrap-grid.min.scss'; 
 @import '../../src/css/plugins/datepicker.min.css'; 
 @import '../../src/css/plugins/jquery.gcSlider.css'; 
@@ -11,26 +10,23 @@
 @import '../../src/css/plugins/slick.css'; 
 @import '../../src/css/plugins/tooltipster.bundle.min.css'; 
 
-@import 'project.scss';  
-
-// blocks 
+@import 'base.scss'; 
+@import 'project.scss'; 
 @import 'blocks/page-note.scss'; 
 @import 'blocks/header-menu.scss'; 
 @import 'blocks/catalog-menu.scss'; 
 @import 'blocks/search.scss'; 
 @import 'blocks/btns.scss'; 
-@import 'blocks/catalog.scss';   
+@import 'blocks/catalog.scss'; 
 @import 'blocks/basket.scss'; 
 @import 'blocks/basket-menu.scss'; 
 @import 'blocks/order.scss'; 
 @import 'blocks/size-menu.scss';   
-@import 'blocks/filter.scss';   
-@import 'blocks/mobile-menu-filter.scss';   
-@import 'blocks/complete-look.scss';   
-// @import 'blocks/slick.scss';   
 
-@import 'base.scss';    
-
+ 
+body {
+  border:1px solid green;
+}
 
 
 // @import 'blocks/*.scss'; 
