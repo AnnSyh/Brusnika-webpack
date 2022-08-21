@@ -1,0 +1,93 @@
+/*!
+   * Sizzle CSS Selector Engine v2.3.6
+   * https://sizzlejs.com/
+   *
+   * Copyright JS Foundation and other contributors
+   * Released under the MIT license
+   * https://js.foundation/
+   *
+   * Date: 2021-02-16
+   */
+
+/*!
+  * PhotoSwipe Lightbox 5.3.1 - https://photoswipe.com
+  * (c) 2022 Dmytro Semenov
+  */
+
+/*!
+ * JavaScript Custom Forms : Checkbox Module
+ *
+ * Copyright 2014-2015 PSD2HTML - http://psd2html.com/jcf
+ * Released under the MIT license (LICENSE.txt)
+ *
+ * Version: 1.2.3
+ */
+
+/*!
+ * JavaScript Custom Forms : Number Module
+ *
+ * Copyright 2014-2015 PSD2HTML - http://psd2html.com/jcf
+ * Released under the MIT license (LICENSE.txt)
+ *
+ * Version: 1.2.3
+ */
+
+/*!
+ * JavaScript Custom Forms : Radio Module
+ *
+ * Copyright 2014-2015 PSD2HTML - http://psd2html.com/jcf
+ * Released under the MIT license (LICENSE.txt)
+ *
+ * Version: 1.2.3
+ */
+
+/*!
+ * JavaScript Custom Forms : Range Module
+ *
+ * Copyright 2014-2015 PSD2HTML - http://psd2html.com/jcf
+ * Released under the MIT license (LICENSE.txt)
+ *
+ * Version: 1.2.1
+ */
+
+/*!
+ * JavaScript Custom Forms : Scrollbar Module
+ *
+ * Copyright 2014-2015 PSD2HTML - http://psd2html.com/jcf
+ * Released under the MIT license (LICENSE.txt)
+ *
+ * Version: 1.2.3
+ */
+
+/*!
+ * JavaScript Custom Forms : Select Module
+ *
+ * Copyright 2014-2016 PSD2HTML - http://psd2html.com/jcf
+ * Released under the MIT license (LICENSE.txt)
+ *
+ * Version: 1.2.3
+ */
+
+/*!
+ * jQuery JavaScript Library v3.6.0
+ * https://jquery.com/
+ *
+ * Includes Sizzle.js
+ * https://sizzlejs.com/
+ *
+ * Copyright OpenJS Foundation and other contributors
+ * Released under the MIT license
+ * https://jquery.org/license
+ *
+ * Date: 2021-03-02T17:08Z
+ */
+
+/*! jQuery Validation Plugin - v1.19.1 - 6/15/2019
+ * https://jqueryvalidation.org/
+ * Copyright (c) 2019 Jörn Zaefferer; Licensed MIT */
+
+/*! jQuery v3.4.1 | (c) JS Foundation and other contributors | jquery.org/license */
+
+/*! js-cookie v3.0.0-rc.4 | MIT */
+
+/*! tooltipster v4.2.7 */
