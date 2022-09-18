@@ -9,7 +9,7 @@ module.exports = {
   entry: {
     index: './src/index.js', 
     brand: './src/brand.js',
-    card: './src/brand.js'
+    card: './src/card.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

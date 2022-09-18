@@ -8186,6 +8186,7 @@ a.catalog-menu__link_lowercase {
   filter: alpha(opacity=0);
   transition: 0.3s opacity cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: none;
+  background-color: transparent;
 }
 
 .catalog-item .catalog-item-like:hover,
@@ -8662,8 +8663,8 @@ a.catalog-menu__link_lowercase {
   font-size: 12px;
   display: flex;
   justify-content: space-around;
-  max-width: 63%;
-  margin: auto;
+  margin: 0;
+  padding: 0;
 }
 .slider-size__list ul li {
   list-style-type: none;
